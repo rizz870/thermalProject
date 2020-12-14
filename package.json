@@ -1,7 +1,7 @@
 {
   "name": "face_mask_detection_package",
   "version": "1.0.0",
-  "description": "[Open Source] Mask Detection System Using Webcam By Kotai Electronics Pvt. Ltd.",
+  "description": "[Open Source] Mask Detection System Using Webcam By Epazz.",
   "keywords": [],
   "license": "MIT",
   "main": "src/index.js",
@@ -13,7 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
+
+    "start": "node app.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
