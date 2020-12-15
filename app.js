@@ -1,6 +1,8 @@
 var http = require('http'); 
 var fs = require('fs'); // to get data from html file 
 
+const port =process.env.port || 8000;
+
 
 http.createServer(function (req, res) { 
     res.writeHead(200, { 'Content-Type': 'text/html' }); 
@@ -42,6 +44,6 @@ http.createServer(function (req, res) {
     console.log("SERVER STARTED PORT: 3000"); 
 }); 
 
-// app.listen(port,() =>{
-//     console.log('listening to the port on at ${port}');
-// })
+app.listen(port,() =>{
+    console.log('listening to the port on at ${port}');
+})
