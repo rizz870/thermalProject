@@ -40,10 +40,10 @@ http.createServer(function (req, res) {
         }); 
     } 
      
-}).listen(3000, function () { 
-    console.log("SERVER STARTED PORT: 3000"); 
-}); 
+// }).listen(3000, function () { 
+//     console.log("SERVER STARTED PORT: 3000"); 
+// }); 
 
-// app.listen(port,() =>{
-//     console.log('listening to the port on at ${port}');
-// })
+}).app.listen(port,() =>{
+    console.log('listening to the port on at ${PORT}');
+})
