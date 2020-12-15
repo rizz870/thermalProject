@@ -38,12 +38,12 @@ http.createServer(function (req, res) {
                 res.end(); 
             } 
         }); 
-    } 
+    }}); 
      
 // }).listen(3000, function () { 
 //     console.log("SERVER STARTED PORT: 3000"); 
 // }); 
 
-}).app.listen(port,() =>{
+app.listen(port, function() {
     console.log('listening to the port on at ${PORT}');
-})
+})  
