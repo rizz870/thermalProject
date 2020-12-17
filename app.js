@@ -1,10 +1,9 @@
 var http = require('http'); 
 var fs = require('fs'); // to get data from html file 
 
-const port =process.env.port || 8000;
+const PORT = process.env.port || 5000;
 
-
-http.createServer(function (req, res) { 
+const server =http.createServer(function (req, res) { 
     res.writeHead(200, { 'Content-Type': 'text/html' }); 
   
     // req.url stores the path in the url 
@@ -39,6 +38,12 @@ http.createServer(function (req, res) {
             } 
         }); 
     }}); 
+
+server.listen(PORT, () => {
+    console.log('server is running on port number:'+ PORT);
+});
+   
+
      
 // }).listen(3000, function () { 
 //     console.log("SERVER STARTED PORT: 3000"); 
