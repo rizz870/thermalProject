@@ -7,18 +7,20 @@
   "main": "app.js",
   "dependencies": {
     "@cloud-annotations/models": "^0.1.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^4.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
   "scripts": {
-
     "start": "node app.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,5 +31,13 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "author": "rizwan yousaf"
+  "author": "rizwan yousaf",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizz870/webproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rizz870/webproject/issues"
+  },
+  "homepage": "https://github.com/rizz870/webproject#readme"
 }
